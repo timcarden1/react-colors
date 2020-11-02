@@ -1,3 +1,8 @@
+## Modification by changing the url
+
+This is a commit test after running the command:
+git remote set-url origin https://github.com/RemiB/myrepo.git
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,3 +1,7 @@
+# Tim Color App
+
+This is my first commit in this forked repo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -6,7 +6,7 @@ import MiniPalette from "./MiniPalette";
 const styles = {
   root: {
     backgroundColor: "blue",
-    height: "100%",
+    height: "100vh",
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
@@ -18,7 +18,6 @@ const styles = {
     alignItems: "flex-start",
     flexDirection: "column",
     flexWrap: "wrap",
-    border: "1px solid white",
   },
 
   nav: {
@@ -33,7 +32,7 @@ const styles = {
     width: "100%",
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
-    gridGap: "1.5rem",
+    gridGap: "1.5rem  ",
   },
 };
 

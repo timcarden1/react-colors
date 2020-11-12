@@ -43,14 +43,23 @@ class PaletteList extends Component {
     this.state = {};
   }
 
+  goToPalette(id) {
+    this.props.history.push(`/palette/${id}`);
+  }
+
   render() {
     const { palettes, classes } = this.props;
 
-    console.log(this.props.palettes);
-
     const miniPalettes = palettes.map((palette) => {
-      return <MiniPalette {...palette} />;
+      return (
+        <MiniPalette
+          {...palette}
+          handleClick={() => this.goToPalette(palette.id)}
+        />
+      );
     });
+
+    console.log(this.props);
     return (
       <div className={classes.root}>
         <div className={classes.container}>

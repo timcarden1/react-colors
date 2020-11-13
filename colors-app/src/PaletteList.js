@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { withStyles } from "@material-ui/styles";
 import MiniPalette from "./MiniPalette";
+import bg from "./bg.svg";
 
 const styles = {
   root: {
-    backgroundColor: "blue",
+    // Background by SVG backgrounds
+    backgroundColor: "#bafff7",
+    backgroundImage: `url(${bg})`,
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
@@ -64,7 +67,7 @@ class PaletteList extends Component {
       <div className={classes.root}>
         <div className={classes.container}>
           <nav className={classes.nav}>
-            <h1>React Colors</h1>
+            <h1 style={{ color: "black" }}>React Colors</h1>
           </nav>
           <div className={classes.palettes}>{miniPalettes}</div>
         </div>
